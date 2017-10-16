@@ -16,12 +16,15 @@ void setup() {
   Serial.begin(9600); //intiates comunication with the computer
   Serial.write("type the letter corosponding to the answer you deem corect"); // sends stuff to computer
   Serial.write("pardon my speejling")
+  void read() {
+    if (Serial.available() > 0) { // gets input from computer
+      input = Serial.read(); // _/\_
+      return input;
+    }
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  void 
-  if (Serial.available() > 0) { // gets input from computer
-                input = Serial.read(); // _/\_ 
-        }
+  
+  }
 }
