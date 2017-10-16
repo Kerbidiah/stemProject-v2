@@ -13,8 +13,8 @@ void setup() {
   pinMode(3,OUTPUT);
   pinMode(2,OUTPUT);
   pinMode(1,OUTPUT);
-  Serial.begin(9600);
-  Serial.write("test");
+  Serial.begin(9600); //intiates comunication with the computer
+  Serial.write("test"); // sends test to computer
 }
 
 void loop() {
