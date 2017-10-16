@@ -14,9 +14,9 @@ void setup() {
   pinMode(2,OUTPUT);
   pinMode(1,OUTPUT);
   Serial.begin(9600); //intiates comunication with the computer
-  Serial.write("type the letter corosponding to the answer you deem corect"); // sends stuff to computer
+  Serial.write("type the lowercase letter corosponding to the answer you deem corect"); // sends stuff to computer
   Serial.write("pardon my speejling")
-  void read() {
+  void read() { //defines read func
     if (Serial.available() > 0) { // gets input from computer
       input = Serial.read(); // _/\_
       return input;
@@ -25,6 +25,9 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+    Serial.write("Which of these is the best choice to stay safe on social media?");
+    Serial.write("A----Keep a private account.")
+    Serial.write("B----Share your real name with strangers.")
+    Serial.write("")
   }
 }
