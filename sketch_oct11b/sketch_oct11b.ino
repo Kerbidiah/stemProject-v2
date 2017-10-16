@@ -28,6 +28,7 @@ void loop() {
     Serial.write("Which of these is the best choice to stay safe on social media?");
     Serial.write("A----Keep a private account.")
     Serial.write("B----Share your real name with strangers.")
-    Serial.write("")
+    Serial.write("C----Sell your soul on eBay.")
+    //write if statement
   }
 }
