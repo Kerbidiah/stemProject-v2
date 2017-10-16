@@ -14,17 +14,13 @@ void setup() {
   pinMode(2,OUTPUT);
   pinMode(1,OUTPUT);
   Serial.begin(9600); //intiates comunication with the computer
-  Serial.write("test"); // sends test to computer
+  Serial.write("type the letter corosponding to the answer you deem corect"); // sends stuff to computer
+  Serial.write("pardon my speejling")
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if (Serial.available() > 0) {
-                // read the incoming byte:
-                input = Serial.read();
-
-                // say what you got:
-                Serial.print("I received: ");
-                Serial.println(input, DEC);
+  if (Serial.available() > 0) { // gets input from computer
+                input = Serial.read(); // _/\_ 
         }
 }
