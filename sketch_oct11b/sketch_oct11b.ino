@@ -1,6 +1,5 @@
-
-str input = "hi";
-
+char answr[1];
+int k = 0;
 void setup() {
   // put your setup code here, to run once:
   pinMode(13, OUTPUT);
@@ -19,12 +18,10 @@ void setup() {
   Serial.write("pardon my speejling");
 }
 
-str read() { //defines read func
-    if (Serial.available() > 0) { // gets input from computer
-      input = Serial.read(); // _/\_
-      return(input);
-    }
-}
+/*void read(String &dest) { //defines read func
+    
+}*/
+
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(1, HIGH);
@@ -32,8 +29,14 @@ void loop() {
   Serial.write("A----Keep a private account.");
   Serial.write("B----Share your real name with strangers.");
   Serial.write("C----Sell your soul on eBay.");
-  //write if statement
-  if(read() == "a"){
+  while(k < 1) {
+    if (Serial.available() > 0) { // gets input from computer
+      answr[1] = Serial.read(); // _/\_
+      k = 1;
+    }
+  }
+  k = 0;
+  if(answr == "a"){
     Serial.write("YOUR RIGHT!!!!!!");
   } else {
     Serial.write("FAKE NEWS!!!!!!!");
