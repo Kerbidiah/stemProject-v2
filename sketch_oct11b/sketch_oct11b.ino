@@ -1,4 +1,5 @@
-int input = 0;
+
+str input = "hi";
 
 void setup() {
   // put your setup code here, to run once:
@@ -18,7 +19,7 @@ void setup() {
   Serial.write("pardon my speejling");
 }
 
-void read() { //defines read func
+str read() { //defines read func
     if (Serial.available() > 0) { // gets input from computer
       input = Serial.read(); // _/\_
       return(input);
