@@ -36,7 +36,7 @@ void loop() {
     }
   }
   k = 0;
-  if(answr == "a\n"){
+  if(answr[1] == "a\n"){
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n");
