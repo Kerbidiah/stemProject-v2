@@ -25,10 +25,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(1, HIGH);
-  Serial.write("Which of these is the best choice to stay safe on social media?");
-  Serial.write("A----Keep a private account.");
-  Serial.write("B----Share your real name with strangers.");
-  Serial.write("C----Sell your soul on eBay.");
+  Serial.write("Which of these is the best choice to stay safe on social media?\n");
+  Serial.write("A----Keep a private account.\n");
+  Serial.write("B----Share your real name with strangers.\n");
+  Serial.write("C----Sell your soul on eBay.\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr[1] = Serial.read(); // _/\_
@@ -36,10 +36,10 @@ void loop() {
     }
   }
   k = 0;
-  if(answr == "a"){
-    Serial.write("YOUR RIGHT!!!!!!");
+  if(answr == "a\n"){
+    Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
-    Serial.write("FAKE NEWS!!!!!!!");
+    Serial.write("FAKE NEWS!!!!!!!\n");
     loop();
   }
 }
