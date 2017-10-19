@@ -1,4 +1,4 @@
-char answr[1];
+char answr;
 int k = 0;
 void setup() {
   // put your setup code here, to run once:
@@ -31,12 +31,12 @@ void loop() {
   Serial.write("C----Sell your soul on eBay.\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
-      answr[1] = Serial.read(); // _/\_
+      answr = Serial.read(); // _/\_
       k = 1;
     }
   }
   k = 0;
-  if(answr[1] == "a\n"){
+  if(answr == "a"){
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n");
