@@ -51,7 +51,6 @@ void thing() {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n");
-    
     thing();
   }
 }
