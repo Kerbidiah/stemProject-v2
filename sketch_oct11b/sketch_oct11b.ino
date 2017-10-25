@@ -19,7 +19,8 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB port only
   }
   Serial.write("type the lowercase letter corosponding to the answer you deem corect\n"); // sends stuff to computer
-  Serial.write("pardon my speejling\n\n");
+  Serial.write("pardon my speejling\n");
+  Serial.write("change thing in bottom to no line ending\n\n");
 }
 
 /*void read(String &dest) { //defines read func
