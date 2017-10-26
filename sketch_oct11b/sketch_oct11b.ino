@@ -54,7 +54,7 @@ void thing() {
   if(answr == 97) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
-    Serial.write("FAKE NEWS!!!!!!!\n");
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
   //   Q2
@@ -76,7 +76,7 @@ void thing() {
   if(answr == 97) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
-    Serial.write("FAKE NEWS!!!!!!!\n");
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
 }
