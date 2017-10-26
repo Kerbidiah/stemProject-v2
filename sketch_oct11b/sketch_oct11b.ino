@@ -29,6 +29,9 @@ void setup() {
 
 void loop() {
   thing();
+  // a = 97
+  // b = 98
+  // c = 99
 }
 
 void thing() {
