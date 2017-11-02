@@ -80,7 +80,7 @@ void thing() {
   Serial.write("What is the strongest password choice?\n");
   Serial.write("A----michaelsong\n");
   Serial.write("B----MasterCringeLard\n");
-  Serial.write("C----A government license conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.\n");
+  Serial.write("C----(*&p@$$powpowl0@F<{17)\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr = Serial.read(); // _/\_
