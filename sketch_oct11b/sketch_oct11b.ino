@@ -16,6 +16,7 @@ void setup() {
   pinMode(2, OUTPUT);
   */
   pinMode(1, OUTPUT);//magnet
+  digitalWrite(1, HIGH);
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
@@ -23,7 +24,6 @@ void setup() {
   Serial.write("type the lowercase letter corosponding to the answer you deem corect\n"); // sends stuff to computer
   Serial.write("pardon my speejling\n");
   Serial.write("change thing in bottom to no line ending\n\n");
-  digitalWrite(1, HIGH);
 }
 
 void loop() {
@@ -98,4 +98,10 @@ void thing() {
     thing();
   }
   //----------------------------------------------------
+
+
+
+
+
+  digitalWrite(1, LOW);
 }
