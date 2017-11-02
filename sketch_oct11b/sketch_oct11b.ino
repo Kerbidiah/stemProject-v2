@@ -77,9 +77,9 @@ void thing() {
     thing();
   }
   //----------------------------------------------------
-  Serial.write("Which of the following is the correct definition of copyright?\n");
-  Serial.write("A----The exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.\n");
-  Serial.write("B----A symbol, word, or words registered to use to represent a company or product.\n");
+  Serial.write("What is the strongest password choice?\n");
+  Serial.write("A----michaelsong\n");
+  Serial.write("B----MasterCringeLard\n");
   Serial.write("C----A government license conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
