@@ -160,7 +160,27 @@ void thing() {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
-
+  //----------------------------------------------------
+  Serial.write("Should you post your personal info on social media?\n");
+  Serial.write("A----Yes! It is fun to get hacked\n");
+  Serial.write("B----No, there are bad people who could use it to their advantage.\n");
+  Serial.write("C----why not?\n");
+  while(k < 1) {
+    if (Serial.available() > 0) { // gets input from computer
+      answr = Serial.read(); // _/\_
+      k = 1;
+    }
+  }
+  k = 0;
+  Serial.print("I received: ");
+  Serial.println(answr, DEC);
+  Serial.write("\n\n");
+  if(answr == 98) {
+    Serial.write("YOUR RIGHT!!!!!!\n");
+  } else {
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+    thing();
+  }
 
 
   digitalWrite(1, LOW);
