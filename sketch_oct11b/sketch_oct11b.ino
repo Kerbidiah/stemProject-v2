@@ -98,7 +98,48 @@ void thing() {
     thing();
   }
   //----------------------------------------------------
-
+  Serial.write("What is a Geotag?\n");
+  Serial.write("A----I give up already.\n");
+  Serial.write("B----It is a tag on an online photo, often on social media, stating the time and the location where the picture was taken\n");
+  Serial.write("C----Isabella’s strange fetish of eating cardboard scraps\n");
+  while(k < 1) {
+    if (Serial.available() > 0) { // gets input from computer
+      answr = Serial.read(); // _/\_
+      k = 1;
+    }
+  }
+  k = 0;
+  Serial.print("I received: ");
+  Serial.println(answr, DEC);
+  Serial.write("\n\n");
+  if(answr == 98) {
+    Serial.write("YOUR RIGHT!!!!!!\n");
+  } else {
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+    thing();
+  }
+  //----------------------------------------------------
+  Serial.write("Name a real social media company.\n");
+  Serial.write("A----Snapstagram\n");
+  Serial.write("B----Instachat\n");
+  Serial.write("C----Reddit\n");
+  while(k < 1) {
+    if (Serial.available() > 0) { // gets input from computer
+      answr = Serial.read(); // _/\_
+      k = 1;
+    }
+  }
+  k = 0;
+  Serial.print("I received: ");
+  Serial.println(answr, DEC);
+  Serial.write("\n\n");
+  if(answr == 98) {
+    Serial.write("YOUR RIGHT!!!!!!\n");
+  } else {
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+    thing();
+  }
+  //----------------------------------------------------
 
 
 
