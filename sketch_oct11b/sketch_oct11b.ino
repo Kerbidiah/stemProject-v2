@@ -181,7 +181,5 @@ void thing() {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
-
-
   digitalWrite(1, LOW);
 }
