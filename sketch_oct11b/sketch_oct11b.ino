@@ -120,9 +120,9 @@ void thing() {
   }
   //----------------------------------------------------
   Serial.write("Name a real social media company.\n");
-  Serial.write("A----Snapstagram\n");
-  Serial.write("B----Instachat\n");
-  Serial.write("C----Reddit\n");
+  Serial.write("B----Snapstagram\n");
+  Serial.write("C----Instachat\n");
+  Serial.write("A----Reddit\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr = Serial.read(); // _/\_
@@ -133,14 +133,33 @@ void thing() {
   Serial.print("I received: ");
   Serial.println(answr, DEC);
   Serial.write("\n\n");
-  if(answr == 98) {
+  if(answr == 97) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
   //----------------------------------------------------
-
+  Serial.write("Is cyberbullying socially acceptable?\n");
+  Serial.write("A----Yes! It’s so fun!\n");
+  Serial.write("B----I guess, if the victim doesn’t know who the bully is.\n");
+  Serial.write("C----No. It hurts others feelings and can cause long-term damage.\n");
+  while(k < 1) {
+    if (Serial.available() > 0) { // gets input from computer
+      answr = Serial.read(); // _/\_
+      k = 1;
+    }
+  }
+  k = 0;
+  Serial.print("I received: ");
+  Serial.println(answr, DEC);
+  Serial.write("\n\n");
+  if(answr == 99) {
+    Serial.write("YOUR RIGHT!!!!!!\n");
+  } else {
+    Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+    thing();
+  }
 
 
 
