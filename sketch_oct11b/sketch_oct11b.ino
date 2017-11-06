@@ -7,22 +7,16 @@ void setup() {
   digitalWrite(1, HIGH);
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
-    // wait for serial port to connect. Needed for native USB port only
   }
-  Serial.write("type the lowercase letter corosponding to the answer you deem corect\n"); // sends stuff to computer
-  Serial.write("change thing in bottom to no line ending\n\n");
+  Serial.write("type the lowercase letter corosponding to the answer you deem corect\nchange thing in bottom to no line ending\n\n");
 }
-
 void loop() {
   thing();
 }
 
 void thing() {
   // put your main code here, to run repeatedly:
-  Serial.write("Which of these is the best choice to stay safe on social media?\n");
-  Serial.write("A----Keep a private account.\n");
-  Serial.write("B----Share your real name with strangers.\n");
-  Serial.write("C----Sell your soul on eBay.\n");
+  Serial.write("Which of these is the best choice to stay safe on social media?\nA----Keep a private account.\nB----Share your real name with strangers.\nC----Sell your soul on eBay.\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr = Serial.read(); // _/\_
