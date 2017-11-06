@@ -3,15 +3,38 @@ int k = 0;
 
 void setup() {
   // put your setup code here, to run once:
+  /*
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(2, OUTPUT);
+  */
   pinMode(1, OUTPUT);//magnet
   digitalWrite(1, HIGH);
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
+<<<<<<< HEAD
   }
   Serial.write("type the lowercase letter corosponding to the answer you deem corect\nchange thing in bottom to no line ending\n\n");
+=======
+    ; // wait for serial port to connect. Needed for native USB port only
+  }
+  Serial.write("type the lowercase letter corosponding to the answer you deem corect\n"); // sends stuff to computer
+  Serial.write("pardon my speejling\n");
+  Serial.write("change thing in bottom to no line ending\n\n");
+>>>>>>> parent of 7ebe147... e1: mem use cutback
 }
 void loop() {
   thing();
+  // a = 97
+  // b = 98
+  // c = 99
 }
 
 void thing() {
@@ -48,7 +71,7 @@ void thing() {
   Serial.print("I received: ");
   Serial.println(answr, DEC);
   Serial.write("\n\n");
-  if(answr == 97) {
+  if(answr == 99) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
