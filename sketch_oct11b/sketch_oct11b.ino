@@ -2,21 +2,8 @@ char answr;
 int k = 0;
 
 void setup() {
-  // put your setup code here, to run once:
-  /*
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(2, OUTPUT);
-  */
-  pinMode(1, OUTPUT);//magnet
-  digitalWrite(1, HIGH);
+  pinMode(13, OUTPUT);//magnet
+  digitalWrite(13, HIGH);
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
@@ -25,7 +12,7 @@ void setup() {
   Serial.write("pardon my speejling\n");
   Serial.write("change thing in bottom to no line ending\n\n");
   thing();
-  digitalWrite(1, LOW);
+  digitalWrite(13, LOW);
 }
 
 void loop() {
