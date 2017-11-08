@@ -83,7 +83,7 @@ void thing() {
   Serial.write("What is a Geotag?\n");
   Serial.write("A----I give up already.\n");
   Serial.write("B----It is a tag on an online photo, often on social media, stating the time and the location where the picture was taken\n");
-  Serial.write("C----Isabella’s strange fetish of eating cardboard scraps\n");
+  Serial.write("C----Isabella\'s strange fetish of eating cardboard scraps\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr = Serial.read(); // _/\_
@@ -123,8 +123,8 @@ void thing() {
   Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("Is cyberbullying socially acceptable?\n");
-  Serial.write("A----Yes! It’s so fun!\n");
-  Serial.write("B----I guess, if the victim doesn’t know who the bully is.\n");
+  Serial.write("A----Yes! It is so fun!\n");
+  Serial.write("B----I guess, if the victim doesn\’t know who the bully is.\n");
   Serial.write("C----No. It hurts others feelings and can cause long-term damage.\n");
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
@@ -150,7 +150,7 @@ void thing() {
   while(k < 1) {
     if (Serial.available() > 0) { // gets input from computer
       answr = Serial.read(); // _/\_
-      k = 1;
+      k = 10000;
     }
   }
   Serial.print("I received: ");
