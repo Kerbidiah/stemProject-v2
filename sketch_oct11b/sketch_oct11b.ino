@@ -30,13 +30,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 97) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //   Q2-----------------------------------------------
   Serial.write("Which of the following is the correct definition of copyright?\n");
   Serial.write("A----The exclusive legal right, given to an originator or an assignee to print, publish, perform, film, or record literary, artistic, or musical material, and to authorize others to do the same.\n");
@@ -51,13 +51,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 99) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("What is the strongest password choice?\n");
   Serial.write("A----michaelsong\n");
@@ -72,13 +72,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 99) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("What is a Geotag?\n");
   Serial.write("A----I give up already.\n");
@@ -93,13 +93,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 98) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("Name a real social media company.\n");
   Serial.write("B----Snapstagram\n");
@@ -114,13 +114,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 97) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("Is cyberbullying socially acceptable?\n");
   Serial.write("A----Yes! It’s so fun!\n");
@@ -135,13 +135,13 @@ void thing() {
   k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 99) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
   //----------------------------------------------------
   Serial.write("Should you post your personal info on social media?\n");
   Serial.write("A----Yes! It is fun to get hacked\n");
@@ -153,14 +153,13 @@ void thing() {
       k = 1;
     }
   }
-  k = 0;
   Serial.print("I received: ");
   Serial.println(answr, DEC);
-  Serial.write("\n\n");
   if(answr == 98) {
     Serial.write("YOUR RIGHT!!!!!!\n");
   } else {
     Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
     thing();
   }
+  Serial.write("\n\n");
 }
