@@ -154,7 +154,7 @@ void thing() {
         k = 10000;
       }
     }
-    k = 0
+    k = 0;
     Serial.print("I received: ");
     Serial.println(answr, DEC);
     if(answr == 98) {
