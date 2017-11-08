@@ -54,7 +54,7 @@ void thing() {
     k = 0;
     Serial.print("I received: ");
     Serial.println(answr, DEC);
-    if(answr == 99) {
+    if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
       Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
