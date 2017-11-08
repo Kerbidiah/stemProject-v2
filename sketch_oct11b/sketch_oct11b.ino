@@ -21,6 +21,7 @@ void loop() {
 
 void thing() {
   while(pass == false) {
+    pass = true
     Serial.write("Which of these is the best choice to stay safe on social media?\nA----Keep a private account.\nB----Share your real name with strangers.\nC----Sell your soul on eBay.\n");
     while(k < 1) {
       if (Serial.available() > 0) { // gets input from computer
@@ -34,7 +35,7 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -55,7 +56,7 @@ void thing() {
     if(answr == 99) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -76,7 +77,7 @@ void thing() {
     if(answr == 99) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -97,7 +98,7 @@ void thing() {
     if(answr == 98) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -118,7 +119,7 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -139,7 +140,7 @@ void thing() {
     if(answr == 99) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
       
     }
     Serial.write("\n\n");
@@ -159,10 +160,8 @@ void thing() {
     Serial.println(answr, DEC);
     if(answr == 98) {
       Serial.write("YOUR RIGHT!!!!!!\n");
-      pass = true;
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
-      
+      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n"); pass = false;
     }
     Serial.write("\n\n");
   }
