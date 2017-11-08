@@ -21,7 +21,7 @@ void loop() {
 
 void thing() {
   while(pass == false) {
-    pass = true
+    pass = true;
     Serial.write("Which of these is the best choice to stay safe on social media?\nA----Keep a private account.\nB----Share your real name with strangers.\nC----Sell your soul on eBay.\n");
     while(k < 1) {
       if (Serial.available() > 0) { // gets input from computer
