@@ -35,10 +35,13 @@ void thing() {
     } else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       if(answr == 120) {
         digitalWrite(13, LOW);
         Serial.write("backdoor has been utilized to initia teh ball drop\n");
       }
+=======
+>>>>>>> parent of d728e4e... added a BACKDOOR
 =======
 >>>>>>> parent of d728e4e... added a BACKDOOR
 =======
