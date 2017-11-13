@@ -33,10 +33,13 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
+<<<<<<< HEAD
       if(answr == 120) {
         digitalWrite(13, LOW);
         Serial.write("backdoor has been utilized to initia teh ball drop\n");
       }
+=======
+>>>>>>> parent of d728e4e... added a BACKDOOR
       Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
       pass = false;
       
