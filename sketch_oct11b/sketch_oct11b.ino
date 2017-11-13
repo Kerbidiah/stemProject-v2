@@ -30,14 +30,12 @@ void thing() {
       }
     }
     k = 0;
-    Serial.print("I received: ");
-    Serial.println(answr, DEC);
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
       if(answr == 120) {
         digitalWrite(13, LOW);
-        Serial.write("backdoor has been opened\n");
+        Serial.write("backdoor has been utilized to initia teh ball drop\n");
       }
       Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
       pass = false;
