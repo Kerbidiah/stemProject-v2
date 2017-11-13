@@ -35,6 +35,10 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
+      if(answr == 120) {
+        digitalWrite(13, LOW);
+        Serial.write("backdoor has been opened\n");
+      }
       Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
       pass = false;
       
