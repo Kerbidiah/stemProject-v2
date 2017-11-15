@@ -4,6 +4,8 @@ bool pass = false;
 
 void setup() {
   pinMode(13, OUTPUT);//magnet
+  pinMode(4, OUTPUT);
+  digitalWrite(4, HIGH);
   digitalWrite(13, HIGH);
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
