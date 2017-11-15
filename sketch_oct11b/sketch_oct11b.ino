@@ -4,7 +4,7 @@ bool pass = false;
 
 void setup() {
   pinMode(13, OUTPUT);//magnet
-  digitalWrite(13, HIGH);
+  digitalWrite(13, LOW); //I
   Serial.begin(9600); //intiates comunication with the computer
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
@@ -13,7 +13,7 @@ void setup() {
   Serial.write("pardon my speejling\n");
   Serial.write("change thing in bottom to no line ending\n\n");
   thing();
-  digitalWrite(13, LOW);
+  digitalWrite(13, HIGH);//I
 }
 
 void loop() {
@@ -34,10 +34,10 @@ void thing() {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
       if(answr == 120) {
-        digitalWrite(13, LOW);
-        Serial.write("backdoor has been utilized to initia teh ball drop\n");
+        digitalWrite(13, HIGH);//I
+        Serial.write("backdoor has been utilized\n");
       }
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
     }
     Serial.write("\n\n");
@@ -58,7 +58,7 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
       
     }
@@ -80,7 +80,7 @@ void thing() {
     if(answr == 99) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
       
     }
@@ -102,7 +102,7 @@ void thing() {
     if(answr == 98) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
       
     }
@@ -124,7 +124,7 @@ void thing() {
     if(answr == 97) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
       
     }
@@ -146,7 +146,7 @@ void thing() {
     if(answr == 99) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
       
     }
@@ -168,10 +168,10 @@ void thing() {
     if(answr == 98) {
       Serial.write("YOUR RIGHT!!!!!!\n");
     } else {
-      Serial.write("FAKE NEWS!!!!!!!\n-------------------------------\n");
+      Serial.write("WRONG!!!!!!!\n-------------------------------\n");
       pass = false;
     }
     Serial.write("\n\n");
   }
-  digitalWrite(13, LOW);
+  digitalWrite(13, HIGH);//I
 }
